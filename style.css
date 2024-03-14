@@ -1,9 +1,32 @@
 body{
     font-size: 15px;
-    width: 1440px;
+    max-width: 1440px;
     height: 0 auto;
     color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
 }
+.full-container{
+    display: flex;
+    width: 80%;
+}
+.left-container{
+    width: 100%;
+    background-color: hsl(31, 77%, 52%);
+    height: 100%;
+}
+.middle-container{
+    width: 100%;
+    background-color: hsl(184, 100%, 22%);
+}
+.right-container{
+    width: 100%;
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+
 Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
 Very dark cyan: hsl(179, 100%, 13%)
