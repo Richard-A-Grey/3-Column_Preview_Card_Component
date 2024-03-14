@@ -5,30 +5,73 @@ body{
     color: hsla(0, 0%, 100%, 0.75);
     display: flex;
     justify-content: center;
+    padding-top: 4%;
+    font-family: sans-serif;
 }
 .full-container{
     display: flex;
-    width: 80%;
+    width: 65%;
+    height: 350px;
 }
 .left-container{
-    width: 100%;
     background-color: hsl(31, 77%, 52%);
-    height: 100%;
+    padding: 5%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .middle-container{
-    width: 100%;
     background-color: hsl(184, 100%, 22%);
+    padding: 5%;
 }
 .right-container{
-    width: 100%;
     background-color: hsl(179, 100%, 13%);
+    padding: 5%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-
-
-
-
-Bright orange: hsl(31, 77%, 52%)
-Dark cyan: hsl(184, 100%, 22%)
-Very dark cyan: hsl(179, 100%, 13%)
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+img{
+    width: 30%;
+}
+.sedan-header, .suv-header,.luxury-header{
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+    margin-top: 20%;
+}
+.sedan-about, .suv-about, .luxury-about{
+    font-size: 75%;
+    line-height: 170%;
+    margin-top: 20%;
+}
+.left-container, .middle-container, .right-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+.sedan-button,.suv-button,.luxury-button{
+        position: absolute;
+        bottom: 10%; 
+        left: 15%; 
+        border:  2px solid white;
+        padding: 10px;
+        border-radius: 30px;
+        width: 40%;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        transition: ease-in .3s;
+}
+.sedan-button:hover,.suv-button:hover,.luxury-button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.sedan-button{
+    color: hsl(31, 77%, 52%);
+}
+.suv-button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury-button{
+    color: hsl(179, 100%, 13%);
+}
